@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #fefcea,rgb(255, 198, 198));
+  }
+  #headText{
+    color:red;
+    padding-left: 30%;
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+.introTokyo{
+    height:70vh;
+    width: 90%;
+}
+#intro{
+    height:70vh;
+    width: 90%;
+    padding-left: 150px;
+}
+h1[id="Tokyo"]{
+    padding-left: 40%;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 900;
+    color:Red;
+}
+.visitTokyo{
+    margin-top: 80px;
+}
+.mstpop{
+    height: vh;
+    width:30vw;
+    box-shadow: 2px 4px 8px black;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+#imgT{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform .3s ease-in-in;
+}
+div[class="Most Popular"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#imgT:hover{
+    transform: scale(0.90);
+    transition: all .5s;
+}
+h2[id="Most Popular"]{
+    color: rgb(7, 165, 113);
+    padding-left: 10%;
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: cursive;
+}
+a[id="tokyoMst"]{
+    color: rgba(212, 34, 34, 0.986);
+}
+#star{
+    color:rgb(80, 80, 191);
+}
+#clock{
+    color:rgb(40, 4, 4)
+}
+.mstpop:hover{
+    box-shadow: 2px 8px 16px black;
+}
+div[class="descMostPop"]{
+    margin-left: 8px;
+}
+#foot-travel{
+    width:100vw;
+    text-align:center;}
+p[id="foot"]{
+    text-align:center;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    height:40px;
+    font-weight: 800;
+}
+
+p[id="descIntoTokyo"]{
+    margin-left: 5%;
+}

@@ -1,0 +1,203 @@
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* ========== GLOBAL ========== */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(35deg, #caf5fb, rgb(255, 204, 225));
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ========== EIFFEL TOWER SECTION ========== */
+.EffileTower {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.imageEffile {
+    padding-left: 15px;
+    animation: bounceIn 1s ease;
+}
+
+video {
+    height: 200px;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    animation: fadeIn 1s ease;
+}
+
+#Tower {
+    width: 20vw;
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    animation: bounceIn 1s ease-in-out;
+}
+
+#Tower:hover {
+    transform: scale(1.07);
+    animation: pulse 0.6s ease-in-out;
+    animation-iteration-count: 1;
+}
+
+#video-container:hover {
+    cursor: pointer;
+}
+
+#headText {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(252, 69, 99);
+    margin-top: 20px;
+    animation: slideInFromLeft 1s ease;
+}
+
+#intro {
+    margin: auto;
+    border-radius: 10px;
+    height: 80vh;
+    width: 80vw;
+    padding: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* ========== HEADINGS ========== */
+h1#Paris {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: cursive;
+    font-weight: 900;
+    color: red;
+    animation: slideInFromLeft 1s ease;
+}
+
+h2#TowerOfEffile {
+    text-align: center;
+    font-weight: 800;
+    width: 100vw;
+    color: blue;
+    font-family: sans-serif;
+    margin: 20px 0;
+    animation: slideInFromLeft 1s ease;
+}
+
+/* ========== HOTELS SECTION ========== */
+.hotelNearEffileTower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hotelGustave, .hotelFranceEffile, .hotelNouvelEffile {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: bounceIn 1s ease;
+}
+
+#hotelGustave, #hotelFranceEffile, #hotelNouvelEffile {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#hotelGustave:hover,
+#hotelFranceEffile:hover,
+#hotelNouvelEffile:hover {
+    transform: scale(1.05);
+    animation: pulse 0.6s ease-in-out;
+    animation-iteration-count: 1;
+}
+
+h3#hotelParis {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: orangered;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* ========== LOUVRE MUSEUM SECTION ========== */
+#LouvreMuseum {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.imageLouvre {
+    height: 30vh;
+    width: 20vw;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    animation: bounceIn 1s ease;
+}
+
+.imageLouvre:hover {
+    transform: scale(1.1);
+    animation: pulse 0.6s ease-in-out;
+    animation-iteration-count: 1;
+}
+
+#Museum {
+    height: 30vh;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ========== FOOTER ========== */
+#foot-travel {
+    width: 100vw;
+    text-align: center;
+}
+
+p#foot {
+    text-align: center;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 40px;
+    animation: fadeIn 1s ease;
+}
+
+p#descIntoTokyo {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    animation: fadeIn 2s ease;
+}
